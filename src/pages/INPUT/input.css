@@ -1,0 +1,77 @@
+.froms{
+  margin-top: 5rem;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.froms .grop{
+  width: 30%;
+  height: 90vh;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  background-color: var(--bg-color);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .8);
+  border-radius: 20px;
+}
+.froms .grop h2{
+  color: var(--main-color);
+  margin-top: 1rem;
+}
+.froms .grop input{
+  border: 2px solid var(--main-color) !important;
+background-color:var(--bg-color);
+  border-radius: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 90%;
+  margin-top: 1rem;
+  height: 3rem;
+  outline: none;
+}
+.froms .grop input:focus{
+  border: 2px solid var(--btn-color) !important;
+  background-color: #ffffff;
+}
+.froms .grop button{
+  margin-top: 1rem;
+  width: 90%;
+  padding: 1rem;
+  border: 2px solid var(--main-color);
+  background: var(--main-color);
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: .3s ease all;
+
+}
+.froms .grop button:hover{
+  background-color: transparent;
+  color: var(--main-color);
+
+}
+.buttons{
+  margin-top: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}.buttons button{
+  margin-left: 1rem;
+}
+
+@media (max-width:992px) {
+  .grop{
+  width: 60% !important;  
+  }
+  .froms .grop button{
+    padding: .5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}

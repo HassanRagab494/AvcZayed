@@ -1,0 +1,117 @@
+:root{
+  --main-color:#1f2278;
+  --Sec-color:#f17732;
+  --btn-color:#565acf;
+  --bg-color:#a59999;
+  --shadow:rgba(0, 0, 0, .2);
+}
+/* src/components/navbar.css */
+/* src/components/navbar.css */
+
+/* تأكد من أن الـ Navbar يستعمل Flexbox لتوسيع المحتوى */
+.navs {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1.5rem; 
+  background-color: var(--bg-color);
+  box-shadow: 0 10px 15px var(--shadow); 
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  flex-grow: 1;
+}
+.links{
+  width: 60rem;
+  display: flex;
+  margin-left: 5rem;
+  justify-content: space-between;
+
+}
+/* تنسيق Container في الـ Navbar */
+.navs .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+/* تنسيق منطقة الروابط */
+.navs .navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+
+/* تنسيق الروابط */
+.navs .nav-link {
+  font-weight: bold; 
+  padding: 0;
+border-radius: 10px;
+  position: relative;
+  color: var(--main-color);
+}
+
+/* تنسيق الـ logo بحيث يكون على الجانب الأيسر */
+.navs .logo  {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.navs .logo img{
+  width: 70px;
+}
+
+
+.navs .text-logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; 
+  margin-left: 5rem !important;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main-color) !important;
+
+}
+
+
+@media (max-width: 767px) {
+  .navs .text-logo {
+    display: none; 
+  }
+}
+
+
+@media (max-width: 767px) {
+  .navs .navbar-collapse {
+    justify-content: center;
+  }
+}
+
+
+
+.NavLink {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+
+}
+
+
+
+
+
+.links .NavLink::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background-color: var(--main-color);
+  transition: .3s ease all;
+}
+.links .NavLink:hover:before{
+  width: 100% !important;
+}
+
+

@@ -1,0 +1,31 @@
+.previous-year-data-page{
+  margin-top: 5.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+ /* .previous_year_data{
+margin-top: 5rem;
+width: 20rem; */
+
+.previous_year_data h2{
+  color: var(--main-color);
+  margin-top: 1rem;
+}
+.previous_year_data input{
+  border: 2px solid var(--main-color) !important;
+background-color:var(--bg-color);
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 1rem;
+  height: 3rem;
+  outline: none;
+}
+.previous_year_data input:focus{
+  border: 2px solid var(--btn-color) !important;
+  background-color: #ffffff;
+}
